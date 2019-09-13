@@ -1,0 +1,218 @@
+﻿[Dictionary]
+Version=CSPro 7.3
+Label=Household
+Name=HOUSEHOLD_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+
+[Level]
+Label=Household Level
+Name=HOUSEHOLD_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Stratum
+Name=STRATUM
+Start=2
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=4
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Village
+Name=VILLAGE
+Start=6
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Locality
+Name=LOCALITY
+Start=8
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=EA
+Name=EA
+Start=11
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Dwelling No
+Name=DWELLING_NO
+Start=15
+Len=5
+ZeroFill=Yes
+
+[Item]
+Label=Household No
+Name=HOUSEHOLD_NO
+Start=20
+Len=3
+ZeroFill=Yes
+
+[Record]
+Label=Interview
+Name=INTERVIEW
+RecordTypeValue='1'
+RecordLen=131
+
+[Item]
+Label=Respondent Line
+Name=RESPONDENT_LINE
+Start=23
+Len=2
+ZeroFill=Yes
+
+[Item]
+Label=Interview Date
+Name=INTERVIEW_DATE
+Start=25
+Len=8
+ZeroFill=Yes
+
+[Item]
+Label=Year
+Name=YEAR
+Start=25
+Len=4
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Month
+Name=MONTH
+Start=29
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Day
+Name=DAY
+Start=31
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Interview Start Time
+Name=INTERVIEW_START_TIME
+Start=33
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=Start Hour
+Name=START_HOUR
+Start=33
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Start Minutes
+Name=START_MINUTES
+Start=35
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Interview End Time
+Name=INTERVIEW_END_TIME
+Start=37
+Len=4
+ZeroFill=Yes
+
+[Item]
+Label=End Hour
+Name=END_HOUR
+Start=37
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=End Minutes
+Name=END_MINUTES
+Start=39
+Len=2
+ItemType=SubItem
+ZeroFill=Yes
+
+[Item]
+Label=Latitude
+Name=LATITUDE
+Start=41
+Len=12
+Decimal=7
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Longitude
+Name=LONGITUDE
+Start=53
+Len=12
+Decimal=7
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=District Name
+Name=DISTRICT_NAME1
+Start=65
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Village Name
+Name=VILLAGE_NAME
+Start=95
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Interviewer Code
+Name=INTERVIEWER_CODE
+Start=125
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=Supervisor Code
+Name=SUPERVISOR_CODE
+Start=128
+Len=3
+ZeroFill=Yes
+
+[Item]
+Label=Interview Status
+Name=INTERVIEW_STATUS
+Start=131
+Len=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Interview Status
+Name=INTERVIEW_STATUS_VS1
+Value=1;Completed
+Value=2;Present But No Respondent At Home
+Value=3;Postponed
+Value=4;Refused
+Value=5;Partially Completed
+Value=6;Dwelling Vacant
+Value=7;Dwelling Destroyed
